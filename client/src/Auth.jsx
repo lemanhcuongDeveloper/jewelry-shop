@@ -5,9 +5,12 @@ export default function Auth() {
   const [form, setForm] = useState({});
 
   const handleSubmit = async () => {
+    // const url = isLogin
+    //   ? "http://localhost:5000/auth/login"
+    //   : "http://localhost:5000/auth/register";
     const url = isLogin
-      ? "http://localhost:5000/auth/login"
-      : "http://localhost:5000/auth/register";
+  ? "https://jewelry-shop-xz6e.onrender.com/auth/login"
+  : "https://jewelry-shop-xz6e.onrender.com/auth/register";
 
     const res = await fetch(url, {
       method: "POST",

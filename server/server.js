@@ -14,7 +14,14 @@ import blogRoutes from "./routes/blogRoutes.js";
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "*", // cho phép tất cả (dễ nhất)
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 app.use("/admin", adminRoutes);
 app.use("/products", productRoutes);

@@ -24,7 +24,7 @@ export default function Register() {
       return;
     }
 
-    const res = await fetch("http://localhost:5000/auth/register", {
+    const res = await fetch("https://jewelry-shop-xz6e.onrender.com/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

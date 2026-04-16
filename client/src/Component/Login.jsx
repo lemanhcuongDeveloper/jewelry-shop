@@ -13,7 +13,7 @@ export default function Login() {
       return;
     }
 
-    const res = await fetch("http://localhost:5000/auth/login", {
+    const res = await fetch("https://jewelry-shop-xz6e.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

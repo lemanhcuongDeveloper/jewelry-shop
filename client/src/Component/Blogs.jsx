@@ -6,7 +6,8 @@ export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    // fetch("http://localhost:5000/blogs")
+    fetch("https://jewelry-shop-xz6e.onrender.com/blogs")
       .then((res) => res.json())
       .then(setBlogs);
   }, []);
